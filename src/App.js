@@ -1,21 +1,51 @@
-
+import {BrowserRouter,Routes,Route,Link} from 'react-router-dom';
+import {Layout,Typography,Space} from 'antd';
+import {Navbar,Exchanges,CryptoDetails,Cryptocurrencies,News,Homepage} from './components';
+import './App.css';
 function App() {
   return (
-    <div className="App">
-     <h1>
-      CryptoCurrency
-     </h1>
+  <div className='app'>
+    <div className='Navbar'>
+     <Navbar/>
     </div>
+    <div className='main'>
+     <Layout>
+      <div className='routes'>
+   
+     <Routes>
+          <Route  path ="/" element={<Homepage/>} />
+        
+
+          <Route path ="/exchanges" element={<Exchanges/>} />
+     
+        
+
+          <Route path ="/cryptocurrencies" element={<Cryptocurrencies/>} />
+        
+          <Route path ="/crypto/:coinId" element={<CryptoDetails/>} />
+          
+          <Route path ="/news" element={<News/>} />
+          </Routes>
+      </div>
+     </Layout>
+     <div className='fotter' level={5} style={{color:'white',textAlign:'center'}}>
+       <Typography.Title>
+        Cryptoverse<br/>
+        All rights reserved
+       </Typography.Title>
+       <Space>
+        <Link to="/">Home</Link>
+        <Link to="/exchanges">Exchanges</Link>
+        <Link to="/news">News</Link>
+       </Space>
+    </div>
+    </div>
+
+
+  </div>
   );
 }
 
 export default App;
 
 
-// echo "# CryptoCurrencyApp" >> README.md
-//   git init
-//   git add README.md
-//   git commit -m "first commit"
-//   git branch -M main
-//   git remote add origin https://github.com/Mansi523/CryptoCurrencyApp.git
-//   git push -u origin main
