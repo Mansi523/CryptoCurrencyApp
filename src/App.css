@@ -20,17 +20,21 @@ a:hover{
 .app{
     display: flex;
     overflow: hidden;
+    display: flex;
+    justify-content:start;
 }
 
 .navbar{
-    flex: 0.2;
+    flex:2;
+    /* width:20%; */
     background-color: rgb(0, 21, 41);
 }
 
 .main{
-    flex: 0.8;
-    width: 100%;
-    
+    flex: 8;
+    position: relative;
+    left:16.8%;
+    /* width: 80%; */
 }
 .routes{
     padding: 20px;
