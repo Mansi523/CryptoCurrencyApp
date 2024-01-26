@@ -19,11 +19,16 @@ const createRequest =(url) =>({
     getCryptos: builder.query({
         query: (count) => createRequest(`/coins?limit=${count}`),
       }),
+          // Note: To access this endpoint you need premium plan
+    getExchanges: builder.query({
+        query: () => createRequest('/exchanges'),
+      }),
    })
 });
 
 export const {
     useGetCryptosQuery,
+    useGetExchangesQuery,
 } =cryptoApi;
 
 // const options = {
