@@ -77,7 +77,15 @@ a:hover{
     justify-content: center;
     align-items: center;
 }
-
+.home-heading-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+.show-more{
+    margin-top: 0px !important;
+}
 @media screen and (max-width:1300px){
     .main{
         margin-left: 50px;
