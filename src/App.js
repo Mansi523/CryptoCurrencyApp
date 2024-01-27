@@ -34,7 +34,7 @@ function App() {
         Cryptoverse<br/>
         All rights reserved
        </Typography.Title>
-       <Space>
+       <Space className='ftbtm'>
         <Link to="/">Home</Link>
         <Link to="/exchanges">Exchanges</Link>
         <Link to="/news">News</Link>

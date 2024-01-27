@@ -20,8 +20,9 @@ a:hover{
 .app{
     display: flex;
     overflow: hidden;
-    display: flex;
     justify-content:start;
+    margin-left:-27px;
+
 }
 
 .navbar{
@@ -85,6 +86,12 @@ a:hover{
 }
 .show-more{
     margin-top: 0px !important;
+}
+.ftbtm{
+    margin-bottom:30px;
+}
+.fotter{
+ padding-top:20px;
 }
 @media screen and (max-width:1300px){
     .main{
