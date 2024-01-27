@@ -4,7 +4,7 @@ import { Collapse, Row, Col, Typography, Avatar } from 'antd';
 import HTMLReactParser from 'html-react-parser';
 
 import { useGetExchangesQuery } from '../services/cryptoApi';
-// import Loader from './Loader';
+import Loader from './Loader';
 
 const { Text } = Typography;
 const { Panel } = Collapse;
@@ -14,7 +14,7 @@ const Exchanges = () => {
   const exchangesList = data?.data?.exchanges;
  // Note: To access this endpoint you need premium plan
  console.log(exchangesList);
-  if (isFetching) return "Loader...";
+  if (isFetching) return <Loader/>;
 
   return (
     <>
