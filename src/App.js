@@ -28,7 +28,8 @@ function App() {
           </Routes>
       </div>
      </Layout>
-     <div className='fotter' level={5} style={{color:'white',textAlign:'center'}}>
+
+     <div className='fotter' level={5} style={{color:'white',backgroundColor:"rgb(0, 21, 41)",textAlign:'center'}}>
        <Typography.Title>
         Cryptoverse<br/>
         All rights reserved
